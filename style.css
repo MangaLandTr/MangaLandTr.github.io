@@ -47,5 +47,12 @@ h1 {
   font-size: 1rem; 
   text-align: center; 
 }
-
+a {
+  color: #00bfff;
+  text-decoration: none;
+}
+a:hover {
+  color: #1e90ff;
+  text-decoration: underline;
+}
 
