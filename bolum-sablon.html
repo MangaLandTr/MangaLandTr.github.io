@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bölüm X - [Manga Adı]</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div id="header-container"></div>
+  <script>
+    fetch("/header.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("header-container").innerHTML = data;
+      });
+  </script>
+
+  <main class="bolum-icerik">
+    <h1>Bölüm X - [Manga Adı]</h1>
+
+    <!-- Aşağıya manga sayfalarının görsellerini ekle -->
+    <img src="sayfa1.jpg" alt="Sayfa 1">
+    <img src="sayfa2.jpg" alt="Sayfa 2">
+    <img src="sayfa3.jpg" alt="Sayfa 3">
+
+    <!-- Bölüm geçişleri -->
+    <div class="gecisler">
+      <a href="bolumX-1.html">‹ Önceki Bölüm</a>
+      <a href="bolumX+1.html">Sonraki Bölüm ›</a>
+    </div>
+  </main>
+</body>
+</html>
