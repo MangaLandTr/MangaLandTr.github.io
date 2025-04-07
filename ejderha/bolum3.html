@@ -2,57 +2,103 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bölüm 3 - Ejderha Avcıları</title>
-  <link rel="stylesheet" href="/style.css">
+  <style>
+    body {
+      background-color: #111;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    h1 {
+      background-color: #0a0;
+      margin: 0;
+      padding: 12px;
+      font-size: 22px;
+      line-height: 1.4em;
+    }
+
+    .banner img {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      margin-top: 10px;
+      border-radius: 8px;
+    }
+
+    .uyari {
+      background-color: #fff;
+      color: #000;
+      padding: 15px;
+      margin: 15px auto;
+      max-width: 600px;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    .sayfa img {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      margin: 10px 0;
+      border-radius: 4px;
+    }
+
+    .navigation {
+      margin: 30px 0;
+    }
+
+    .nav-button {
+      background-color: #0a0;
+      color: #fff;
+      padding: 10px 20px;
+      margin: 0 10px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    .nav-button:hover {
+      background-color: #0c0;
+    }
+  </style>
 </head>
 <body>
-  <div id="header-container"></div>
-  <script>
-    fetch("/header.html")
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById("header-container").innerHTML = data;
-      });
-  </script>
 
-  <main class="bolum-icerik">
-    <h1>Bölüm 3 - Ejderha Avcıları </h1>
-    <img src="bolum3/sayfa1.jpg" alt="Sayfa 1">
-    <img src="bolum3/sayfa2.jpg" alt="Sayfa 2">
-    <img src="bolum3/sayfa3.jpg" alt="Sayfa 3">
-    <img src="bolum3/sayfa4.jpg" alt="Sayfa 4">
-    <img src="bolum3/sayfa5.jpg" alt="Sayfa 5">
-    <img src="bolum3/sayfa6.jpg" alt="Sayfa 6">
-    <img src="bolum3/sayfa7.jpg" alt="Sayfa 7">
-    <img src="bolum3/sayfa8.jpg" alt="Sayfa 8">
-    <img src="bolum3/sayfa9.jpg" alt="Sayfa 9">
-    <img src="bolum3/sayfa10.jpg" alt="Sayfa 10">
-    <img src="bolum3/sayfa11.jpg" alt="Sayfa 11">
-    <img src="bolum3/sayfa12.jpg" alt="Sayfa 12">
-    <img src="bolum3/sayfa13.jpg" alt="Sayfa 13">
-    <img src="bolum3/sayfa14.jpg" alt="Sayfa 14">
-    <img src="bolum3/sayfa15.jpg" alt="Sayfa 15">
-    <img src="bolum3/sayfa16.jpg" alt="Sayfa 16">
-    <img src="bolum3/sayfa17.jpg" alt="Sayfa 17">
-    <img src="bolum3/sayfa18.jpg" alt="Sayfa 18">
-    <img src="bolum3/sayfa19.jpg" alt="Sayfa 19">
-    <img src="bolum3/sayfa20.jpg" alt="Sayfa 20">
-    <img src="bolum3/sayfa21.jpg" alt="Sayfa 21">
-    <img src="bolum3/sayfa22.jpg" alt="Sayfa 22">
-    <img src="bolum3/sayfa23.jpg" alt="Sayfa 23">
-    <img src="bolum3/sayfa24.jpg" alt="Sayfa 24">
-    <img src="bolum3/sayfa25.jpg" alt="Sayfa 25">
-    <img src="bolum3/sayfa26.jpg" alt="Sayfa 26">
-    <img src="bolum3/sayfa27.jpg" alt="Sayfa 27">
-    <img src="bolum3/sayfa28.jpg" alt="Sayfa 28">
-    <img src="bolum3/sayfa29.jpg" alt="Sayfa 29">
-    <img src="bolum3/sayfa30.jpg" alt="Sayfa 30">
+  <h1>MangaLandTR<br>Bölüm 3 - Ejderha Avcıları</h1>
 
-    <div class="gecisler">
-      <a href="bolum(2).html">‹ Önceki Bölüm</a>
-      <a href="bolum(4).html">Sonraki Bölüm ›</a>
-    </div>
-  </main>
+  <div class="banner">
+    <img src="sayfa1.jpg" alt="Kapak Sayfası">
+  </div>
+
+  <div class="uyari">
+    Bu bölüm bazı okuyucuların rahatsız edici bulabileceği içeriklere sahiptir.<br>Okuyucuların dikkatine sunulur.
+  </div>
+
+  <div class="sayfa">
+    <img src="sayfa2.jpg" alt="Sayfa 2">
+    <img src="sayfa3.jpg" alt="Sayfa 3">
+    <img src="sayfa4.jpg" alt="Sayfa 4">
+    <img src="sayfa5.jpg" alt="Sayfa 5">
+    <img src="sayfa6.jpg" alt="Sayfa 6">
+    <img src="sayfa7.jpg" alt="Sayfa 7">
+    <img src="sayfa8.jpg" alt="Sayfa 8">
+    <img src="sayfa9.jpg" alt="Sayfa 9">
+    <img src="sayfa10.jpg" alt="Sayfa 10">
+    <img src="sayfa11.jpg" alt="Sayfa 11">
+    <img src="sayfa12.jpg" alt="Sayfa 12">
+    <img src="sayfa13.jpg" alt="Sayfa 13">
+    <img src="sayfa14.jpg" alt="Sayfa 14">
+    <img src="sayfa15.jpg" alt="Sayfa 15">
+  </div>
+
+  <div class="navigation">
+    <a href="../bolum-2/index.html" class="nav-button">← Önceki Bölüm</a>
+    <a href="../bolum-4/index.html" class="nav-button">Sonraki Bölüm →</a>
+  </div>
+
 </body>
 </html>
