@@ -2,24 +2,89 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bölüm X - Manga Adı</title>
-  <link rel="stylesheet" href="/style.css">
+  <title>Bölüm X - [Manga Adı]</title>
+  <style>
+    body {
+      background-color: #111;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    h1 {
+      background-color: #0a0;
+      margin: 0;
+      padding: 12px;
+      font-size: 22px;
+      line-height: 1.4em;
+    }
+
+    .banner img {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      margin-top: 10px;
+      border-radius: 8px;
+    }
+
+    .uyari {
+      background-color: #fff;
+      color: #000;
+      padding: 15px;
+      margin: 15px auto;
+      max-width: 600px;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    .sayfa img {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      margin: 10px 0;
+      border-radius: 4px;
+    }
+
+    .navigation {
+      margin: 30px 0;
+    }
+
+    .nav-button {
+      background-color: #0a0;
+      color: #fff;
+      padding: 10px 20px;
+      margin: 0 10px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    .nav-button:hover {
+      background-color: #0c0;
+    }
+  </style>
 </head>
 <body>
-  <div id="header-container"></div>
-  <script>
-    fetch("/header.html")
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById("header-container").innerHTML = data;
-      });
-  </script>
 
-  <main class="bolum-icerik">
-    <h1>Bölüm X - Manga Adı</h1>
-    <img src="bolumX/sayfa1.jpg" alt="Sayfa 1">
-    <img src="bolumX/sayfa2.jpg" alt="Sayfa 2">
+  <h1>MangaLandTR<br>Bölüm X - [Manga Adı]</h1>
+
+  <div class="navigation">
+    <a href="../bolum-X-1/index.html" class="nav-button">← Önceki Bölüm</a>
+    <a href="../bolum-X+1/index.html" class="nav-button">Sonraki Bölüm →</a>
+  </div>
+
+  <div class="banner">
+    <img src="bolumX/sayfa1.jpg" alt="Kapak Sayfası">
+  </div>
+
+  <div class="uyari">
+    Bu bölüm bazı okuyucuların rahatsız edici bulabileceği içeriklere sahiptir.<br>Okuyucuların dikkatine sunulur.
+  </div>
+
+  <div class="sayfa">
+   <img src="bolumX/sayfa2.jpg" alt="Sayfa 2">
     <img src="bolumX/sayfa3.jpg" alt="Sayfa 3">
     <img src="bolumX/sayfa4.jpg" alt="Sayfa 4">
     <img src="bolumX/sayfa5.jpg" alt="Sayfa 5">
@@ -48,11 +113,12 @@
     <img src="bolumX/sayfa28.jpg" alt="Sayfa 28">
     <img src="bolumX/sayfa29.jpg" alt="Sayfa 29">
     <img src="bolumX/sayfa30.jpg" alt="Sayfa 30">
+  </div>
 
-    <div class="gecisler">
-      <a href="bolum(X-1).html">‹ Önceki Bölüm</a>
-      <a href="bolum(X+1).html">Sonraki Bölüm ›</a>
-    </div>
-  </main>
+  <div class="navigation">
+    <a href="../bolumX-1/index.html" class="nav-button">← Önceki Bölüm</a>
+    <a href="../bolumX+1/index.html" class="nav-button">Sonraki Bölüm →</a>
+  </div>
+
 </body>
 </html>
