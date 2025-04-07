@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
+  <div id="header-container"></div>
+  <script>
+    fetch("/header.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("header-container").innerHTML = data;
+      });
+  </script>
     <h1>Ejderha Avcıları</h1>
     <h2>Bölüm 1: Alevin Doğuşu</h2>
     <p>Ormanın derinliklerinde uyanan bir ejderha, köyü tehdit etmeye başlar...</p>
