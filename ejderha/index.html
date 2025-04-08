@@ -2,68 +2,23 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <title>Ejderha Avcıları - Bölümler</title>
-  <link rel="stylesheet" href="/style.css">
-  <style>
-    .manga-info {
-      background-color: #0a0;
-      padding: 20px;
-      text-align: center;
-      color: white;
-    }
-
-    .manga-info img {
-      width: 200px;
-      border-radius: 10px;
-      margin-bottom: 10px;
-    }
-
-    .chapter-list {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 20px;
-      gap: 15px;
-    }
-
-    .chapter-box {
-      background-color: #222;
-      color: white;
-      padding: 15px 25px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-size: 16px;
-      transition: 0.3s;
-    }
-
-    .chapter-box:hover {
-      background-color: #0c0;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejderha Avcıları</title>
+  <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-
-  <header style="background-color:#0a0; padding:15px; text-align:center;">
-    <a href="/index.html" style="color:white; text-decoration:none; font-size:26px; font-weight:bold; display:flex; align-items:center; justify-content:center; gap:10px;">
-      <img src="/logo.png" alt="Logo" style="height:36px;">
-      <span style="text-shadow: 2px 2px 5px black;">MangaLandTR</span>
-    </a>
-  </header>
-
-  <div class="manga-info">
-    <img src="/images/ejderha.jpg" alt="Ejderha Avcıları">
-    <h1>Ejderha Avcıları</h1>
-    <p>İstediğiniz bölümü seçerek okumaya başlayabilirsiniz.</p>
+  <div class="manga-container">
+    <div class="manga-card-large">
+      <img src="../images/ejderha.jpg" alt="Ejderha Avcıları" class="manga-banner">
+      <h1 class="manga-title">Ejderha Avcıları</h1>
+      <p class="manga-description">İstediğiniz bölümü seçerek okumaya başlayabilirsiniz.</p>
+      <div class="chapter-buttons">
+        <a href="bolum1.html">Bölüm 1</a>
+        <a href="bolum2.html">Bölüm 2</a>
+        <a href="bolum3.html">Bölüm 3</a>
+        <a href="bolum4.html">Bölüm 4</a>
+      </div>
+    </div>
   </div>
-
-  <div class="chapter-list">
-    <a class="chapter-box" href="bolum1.html">Bölüm 1</a>
-    <a class="chapter-box" href="bolum2.html">Bölüm 2</a>
-    <a class="chapter-box" href="bolum3.html">Bölüm 3</a>
-    <a class="chapter-box" href="bolum4.html">Bölüm 4</a>
-    
-    <!-- Yeni bölümler geldikçe aşağıya ekleyebilirsin -->
-  </div>
-
 </body>
 </html>
