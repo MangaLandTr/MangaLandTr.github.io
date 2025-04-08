@@ -5,6 +5,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ejderha Avcıları</title>
   <link rel="stylesheet" href="../style.css">
+  <style>
+    .manga-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 2rem;
+      background-color: #121212;
+    }
+
+    .manga-card-large {
+      background-color: #1e1e1e;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+      padding: 2rem;
+      max-width: 500px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .manga-banner {
+      width: 100%;
+      border-radius: 12px;
+      max-height: 250px;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+
+    .manga-title {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .manga-description {
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+      color: #bbb;
+    }
+
+    .chapter-buttons {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 0.75rem;
+    }
+
+    .chapter-buttons a {
+      display: block;
+      padding: 0.6rem;
+      background-color: #2c2c2c;
+      border-radius: 8px;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background-color 0.2s ease;
+    }
+
+    .chapter-buttons a:hover {
+      background-color: #444;
+    }
+  </style>
 </head>
 <body>
   <div class="manga-container">
