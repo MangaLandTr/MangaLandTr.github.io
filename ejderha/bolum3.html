@@ -2,7 +2,7 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <title>Bölüm 3 - Ejderha Avcıları</title>
+  <title>Bölüm 3 - [Ejderha Avcıları]</title>
   <style>
     body {
       background-color: #111;
@@ -40,10 +40,11 @@
     }
 
     .sayfa img {
+      display: block;
       width: 100%;
       max-width: 600px;
       height: auto;
-      margin: 10px 0;
+      margin: 0 auto;
       border-radius: 4px;
     }
 
@@ -67,15 +68,19 @@
   </style>
 </head>
 <body>
-<div id="header-container"></div>
-<script>
-  fetch("/header.html")
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById("header-container").innerHTML = data;
-    });
-</script>
-  <h1>MangaLandTR<br>Bölüm 3 - Ejderha Avcıları</h1>
+
+  <header>
+    <script>
+      document.write('<a href="/index.html" style="color:white; text-decoration:none; font-size:20px;">MangaLandTR</a>');
+    </script>
+  </header>
+
+  <h1>Bölüm 3 - [Ejderha Avcıları]</h1>
+
+  <div class="navigation">
+    <a href="bolum2.html" class="nav-button">← Önceki Bölüm</a>
+    <a href="bolum4.html" class="nav-button">Sonraki Bölüm →</a>
+  </div>
 
   <div class="banner">
     <img src="bolum3/sayfa1.jpg" alt="Kapak Sayfası">
@@ -86,6 +91,8 @@
   </div>
 
   <div class="sayfa">
+    <!-- Sayfa 2-30 -->
+    <!-- Aşağısı otomatik liste -->
     <img src="bolum3/sayfa2.jpg" alt="Sayfa 2">
     <img src="bolum3/sayfa3.jpg" alt="Sayfa 3">
     <img src="bolum3/sayfa4.jpg" alt="Sayfa 4">
